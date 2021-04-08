@@ -22,7 +22,7 @@ public class Main {
     private static Random generator;
     
     public static void main(String args[]) {
-        tempo = 600;
+        tempo = 1000;
         generator = new Random(System.currentTimeMillis());
         try {
             robot = new Robot();
@@ -30,6 +30,7 @@ public class Main {
             System.out.println("Start counting...");
             sleep(5000);
             
+            // k1
             sleep(tempo);
             sleep(tempo / 2);
             play(new int[]{KeyEvent.VK_W}, tempo / 2);
@@ -37,6 +38,7 @@ public class Main {
             play(new int[]{KeyEvent.VK_J}, tempo / 2);
             play(new int[]{KeyEvent.VK_H}, tempo / 2);
             play(new int[]{KeyEvent.VK_G}, tempo / 2);
+            // k2
             play(new int[]{KeyEvent.VK_D, KeyEvent.VK_H}, tempo / 2);
             play(new int[]{KeyEvent.VK_G}, tempo / 2);
             play(new int[]{KeyEvent.VK_H}, tempo / 2);
@@ -45,6 +47,7 @@ public class Main {
             play(new int[]{KeyEvent.VK_S}, tempo / 2);
             play(new int[]{KeyEvent.VK_S}, tempo / 2);
             play(new int[]{KeyEvent.VK_G}, tempo / 2);
+            // k3
             play(new int[]{KeyEvent.VK_S, KeyEvent.VK_H}, tempo / 2);
             play(new int[]{KeyEvent.VK_G}, tempo / 2);
             play(new int[]{KeyEvent.VK_H}, tempo / 2);
@@ -53,6 +56,7 @@ public class Main {
             play(new int[]{KeyEvent.VK_G, KeyEvent.VK_J}, tempo / 2);
             play(new int[]{KeyEvent.VK_W}, tempo / 2);
             play(new int[]{KeyEvent.VK_G}, tempo / 2);
+            // k4
             play(new int[]{KeyEvent.VK_G}, tempo / 2);
             play(new int[]{KeyEvent.VK_J}, tempo / 2);
             play(new int[]{KeyEvent.VK_Q}, tempo / 2);
@@ -61,11 +65,13 @@ public class Main {
             play(new int[]{KeyEvent.VK_D}, tempo / 2);
             play(new int[]{KeyEvent.VK_G}, tempo / 2);
             play(new int[]{KeyEvent.VK_J}, tempo / 2);
+            // k5
             play(new int[]{KeyEvent.VK_J}, tempo * 2);
             sleep(tempo / 2);
             play(new int[]{KeyEvent.VK_S}, tempo / 2);
             play(new int[]{KeyEvent.VK_S}, tempo / 2);
             play(new int[]{KeyEvent.VK_G}, tempo / 2);
+            // k6
             play(new int[]{KeyEvent.VK_A, KeyEvent.VK_D, KeyEvent.VK_H}, tempo / 2);
             play(new int[]{KeyEvent.VK_G}, tempo / 2);
             play(new int[]{KeyEvent.VK_H}, tempo / 2);
@@ -74,6 +80,7 @@ public class Main {
             play(new int[]{KeyEvent.VK_S, KeyEvent.VK_H}, tempo / 2);
             play(new int[]{KeyEvent.VK_G}, tempo / 2);
             play(new int[]{KeyEvent.VK_S, KeyEvent.VK_H}, tempo / 2);
+            // k7
             play(new int[]{KeyEvent.VK_F, KeyEvent.VK_W}, tempo / 2);
             play(new int[]{KeyEvent.VK_J}, tempo / 2);
             play(new int[]{KeyEvent.VK_F, KeyEvent.VK_H}, tempo / 2);
@@ -82,12 +89,14 @@ public class Main {
             play(new int[]{KeyEvent.VK_D, KeyEvent.VK_J}, tempo / 2);
             play(new int[]{KeyEvent.VK_J}, tempo / 2);
             play(new int[]{KeyEvent.VK_D, KeyEvent.VK_J}, tempo / 2);
+            // k8
             play(new int[]{KeyEvent.VK_D, KeyEvent.VK_G, KeyEvent.VK_Q}, tempo);
             play(new int[]{KeyEvent.VK_D, KeyEvent.VK_J}, tempo / 2);
             play(new int[]{KeyEvent.VK_G}, tempo / 2);
             play(new int[]{KeyEvent.VK_S, KeyEvent.VK_G}, tempo / 2);
             play(new int[]{KeyEvent.VK_D}, tempo);
             play(new int[]{KeyEvent.VK_M, KeyEvent.VK_G}, tempo / 2);
+            // k9
             play(new int[]{KeyEvent.VK_M, KeyEvent.VK_G}, tempo);
             sleep(tempo / 2);
             play(new int[]{KeyEvent.VK_M, KeyEvent.VK_D}, tempo / 2);
@@ -95,32 +104,38 @@ public class Main {
             play(new int[]{KeyEvent.VK_M, KeyEvent.VK_G}, tempo / 2);
             play(new int[]{KeyEvent.VK_M, KeyEvent.VK_G}, tempo / 2);
             play(new int[]{KeyEvent.VK_M, KeyEvent.VK_G}, tempo / 2);
+            // k10
             play(new int[]{KeyEvent.VK_D, KeyEvent.VK_G, KeyEvent.VK_E}, tempo);
             play(new int[]{KeyEvent.VK_C, KeyEvent.VK_D}, tempo);
             play(new int[]{KeyEvent.VK_D, KeyEvent.VK_E}, tempo / 2);
             play(new int[]{KeyEvent.VK_F, KeyEvent.VK_R}, tempo / 2);
             play(new int[]{KeyEvent.VK_D, KeyEvent.VK_E}, tempo / 2);
             play(new int[]{KeyEvent.VK_S, KeyEvent.VK_W}, tempo / 2);
+            // k11
             play(new int[]{KeyEvent.VK_J, KeyEvent.VK_E}, tempo);
             play(new int[]{KeyEvent.VK_M, KeyEvent.VK_D}, tempo);
             play(new int[]{KeyEvent.VK_J, KeyEvent.VK_E}, tempo);
             play(new int[]{KeyEvent.VK_M, KeyEvent.VK_D}, tempo);
+            // k12
             play(new int[]{KeyEvent.VK_J, KeyEvent.VK_E}, tempo);
             play(new int[]{KeyEvent.VK_M, KeyEvent.VK_D}, tempo);
             play(new int[]{KeyEvent.VK_J, KeyEvent.VK_E}, tempo / 2);
             play(new int[]{KeyEvent.VK_R}, tempo / 2);
             play(new int[]{KeyEvent.VK_J, KeyEvent.VK_E}, tempo / 2);
             play(new int[]{KeyEvent.VK_W}, tempo / 2);
+            // k13
             play(new int[]{KeyEvent.VK_J, KeyEvent.VK_E}, tempo);
             play(new int[]{KeyEvent.VK_M, KeyEvent.VK_D}, tempo);
             play(new int[]{KeyEvent.VK_J, KeyEvent.VK_E}, tempo);
             play(new int[]{KeyEvent.VK_M, KeyEvent.VK_D}, tempo);
+            // k14
             play(new int[]{KeyEvent.VK_J, KeyEvent.VK_E}, tempo);
             play(new int[]{KeyEvent.VK_D}, tempo);
             play(new int[]{KeyEvent.VK_J, KeyEvent.VK_E}, tempo / 2);
             play(new int[]{KeyEvent.VK_R}, tempo / 2);
             play(new int[]{KeyEvent.VK_J, KeyEvent.VK_E}, tempo / 2);
             play(new int[]{KeyEvent.VK_W}, tempo / 2);
+            // k15
             play(new int[]{KeyEvent.VK_E, KeyEvent.VK_U}, tempo);
             play(new int[]{KeyEvent.VK_D, KeyEvent.VK_J, KeyEvent.VK_E}, tempo);
             play(new int[]{KeyEvent.VK_E, KeyEvent.VK_U}, tempo);
@@ -134,9 +149,7 @@ public class Main {
             play(new int[]{KeyEvent.VK_W}, tempo / 2);
             play(new int[]{KeyEvent.VK_W}, tempo / 2);
             play(new int[]{KeyEvent.VK_W}, tempo / 2);*/
-        } catch (AWTException ex) {
-            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (InterruptedException ex) {
+        } catch (AWTException | InterruptedException ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
