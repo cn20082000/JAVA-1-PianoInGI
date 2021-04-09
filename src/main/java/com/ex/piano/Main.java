@@ -22,7 +22,7 @@ public class Main {
     private static Random generator;
     
     public static void main(String args[]) {
-        tempo = 600;
+        tempo = 800;
         generator = new Random(System.currentTimeMillis());
         try {
             robot = new Robot();
