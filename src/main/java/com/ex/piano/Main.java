@@ -59,8 +59,9 @@ public class Main {
     }
     
     private static void init() {
-        tempo = 600;
-        song = "OneRoomSugarLife";
+        tempo = 500;
+//        song = "OneRoomSugarLife";
+        song = "AuldLangSyne";
     }
     
     private static void read() throws FileNotFoundException {
