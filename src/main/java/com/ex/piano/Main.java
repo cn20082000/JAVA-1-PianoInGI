@@ -51,6 +51,8 @@ public class Main {
             System.out.println("Bat dau choi nhac trong " + sec + " giay nua...");
             Thread.sleep(sec * 1000);
             play();
+            Thread.sleep(tempo * 4);
+            play();
         } catch (InterruptedException ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -61,7 +63,12 @@ public class Main {
     private static void init() {
         tempo = 500;
 //        song = "OneRoomSugarLife";
-        song = "AuldLangSyne";
+//        song = "AuldLangSyne";
+//        song = "SlowMotion";
+//        song = "KawaikuNaritai";
+//        song = "HappySynthesizerC";
+//        song = "TienQuanCa";
+        song = "NhuCoBacTrongNgayVuiDaiThang";
     }
     
     private static void read() throws FileNotFoundException {
@@ -116,14 +123,15 @@ public class Main {
     }
     
     private static void play(int key[], int length) throws InterruptedException {
-        length = length + generator.nextInt(21) - 10;
+//        length = length + generator.nextInt(21) - 10;
         for (int i = 0; i < key.length; ++i) {
             robot.keyPress(key[i]);
         }
-        Thread.sleep((length / 4) * 3);
+        Thread.sleep((length / 2));
         for (int i = 0; i < key.length; ++i) {
             robot.keyRelease(key[i]);
         }
-        Thread.sleep(length / 4);
+        Thread.sleep(length / 2);
+//        Thread.sleep(length);
     }
 }
